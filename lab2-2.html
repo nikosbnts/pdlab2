@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>lab2-2</title>
+    <style>
+
+        h3,legend {
+          color: black;
+          padding: 1px 5px;
+          font-size:  1.4em;
+        }
+        select,input {
+          padding: 0.5em;
+          margin: 5px;
+          border-radius: 4px;
+          border: 1px solid silver;
+        }
+        </style>
+</head>
+<body>
+        <h1>Αίτηση έκδοσης πιστοποιητικού</h1>
+        <form action="/lab2-1.html">
+            <fieldset>
+             <legend>Στοιχεία Φοιτητή</legend>
+             <h3>Συμπλήρωσε τα στοιχεία με ελληνικούς χαρακτήρες</h3>
+            <p>
+                <label for="full_name">Ονοματεπώνυμο:</label>
+                <br>
+                <input name="first_name" id="First_Name" type="text" placeholder="Όνομα" />
+                <input name="last_name" id="Last_Name" type="text" placeholder="Επίθετο"/> 
+            </p>
+            <p>
+                <label for="address">Στοιχεία Διεύθυνσης:</label>
+                <br>
+                <input name="address" id="Address" type="text"placeholder="Οδός και αριθμός" style="width:370px;"/>
+                <br>
+                <input name="town" id="Town" type="text" placeholder="Πόλη"/>
+                <input name="tk" id="TK" type="text" placeholder="Ταχυδρομικός Κώδικας"/> 
+            </p>
+            <p>
+                <label for="Com">Στοιχεία Επικοινωνίας</label>
+                <br>
+                <input name="phone" id="Phone" type="text" placeholder="Τηλέφωνο" />
+                <input name="email" id="Email" type="text" placeholder="Διεύθυνση μέιλ" /> 
+            </p>
+            <p>
+                <label for="year">Έτος Σπουδών</label>
+                <label>
+                    <input type="radio" name="year"
+                    value="type1">Α
+                </label>
+                <label>
+                    <input type="radio" name="year"
+                    value="type2">Β
+                </label>
+                <label>
+                    <input type="radio" name="year"
+                    value="type3">Γ
+                </label>
+                <label>
+                    <input type="radio" name="year"
+                    value="type4">Δ
+                </label>
+                <label>
+                    <input type="radio" name="year"
+                    value="type5">Ε
+                </label>
+            </p>
+            
+            <label for="ID">Αριθμός Μητρώου</label><br>
+            <input type="number" id="ID" name="id" step="1" placeholder="1072871">
+        
+        </fieldset>
+        <fieldset>
+            <legend>Επιλέξτε Πιστοποιητικό και τρόπο παραλαβής</legend>
+       
+           <label>Είδος Πιστοποιητικού</label><br>
+            <select name="Certificate">
+                <option value="cert1">Φωτοτυπία καρτέλας</option>
+                <option value="cert2">Ενεργού Φοιτητή</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Παραλαβή Πιστοποιητικού</legend>
+       
+                <label>
+                    <input type="radio" name="Receive_from"
+                    value="type1">Παραλαβή απο την γραμματεία
+                </label><br>
+                <label>
+                    <input type="radio" name="Receive_from"
+                    value="type2">Αποστολή στη Διεύθυνση οικίας
+                </label><br><br>
+
+                <label>Ημερομηνία παραλαβής</label><br>
+                <input type="date" name="Date" id = "date"> 
+        </fieldset><br>
+
+        <input type="submit" value="Υποβολή" />
+              
+</body>
